@@ -17,7 +17,9 @@ class ItemDetailView: UIViewController {
     private var dataSource: RxTableViewSectionedReloadDataSource<ItemDetailSectionModel>?
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var deleteButton: UIButton!
-
+    @IBOutlet weak var nameView: UIView!
+    @IBOutlet weak var nameTextField: UITextField!
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return UIStatusBarStyle.lightContent
     }

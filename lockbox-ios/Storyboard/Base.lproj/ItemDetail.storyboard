@@ -18,8 +18,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="4I2-rO-7Qh">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HDm-Mh-rSA" userLabel="Name View" customClass="ItemDetailNameView" customModule="Lockbox" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lpk-0b-zd6" userLabel="Title">
+                                        <rect key="frame" x="15.000000000000004" y="12" width="35.333333333333343" height="6"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                        <color key="textColor" red="0.45098039220000002" green="0.45098039220000002" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                        <attributedString key="userComments">
+                                            <fragment content="This is a placeholder string for development purposes only"/>
+                                        </attributedString>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WjS-OI-IM5" userLabel="Text Value">
+                                        <rect key="frame" x="15" y="18" width="339" height="17"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Lpk-0b-zd6" firstAttribute="top" secondItem="HDm-Mh-rSA" secondAttribute="top" constant="12" id="0nT-M4-7Qt"/>
+                                    <constraint firstAttribute="bottom" secondItem="WjS-OI-IM5" secondAttribute="bottom" constant="9" id="BOz-0S-zZS"/>
+                                    <constraint firstAttribute="height" constant="44" id="H8n-fJ-z6j"/>
+                                    <constraint firstItem="Lpk-0b-zd6" firstAttribute="leading" secondItem="HDm-Mh-rSA" secondAttribute="leading" constant="15" id="HWE-SI-UDU"/>
+                                    <constraint firstAttribute="trailing" secondItem="WjS-OI-IM5" secondAttribute="trailing" constant="60" id="PXs-tM-0ms"/>
+                                    <constraint firstItem="WjS-OI-IM5" firstAttribute="leading" secondItem="Lpk-0b-zd6" secondAttribute="leading" id="h1q-yt-bYY"/>
+                                    <constraint firstItem="WjS-OI-IM5" firstAttribute="top" secondItem="Lpk-0b-zd6" secondAttribute="bottom" id="yDK-74-oYn"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="4I2-rO-7Qh">
+                                <rect key="frame" x="0.0" y="88" width="414" height="896"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="osx-2O-xPR">
                                     <rect key="frame" x="0.0" y="117.33333333333334" width="414" height="44"/>
@@ -130,26 +160,30 @@
                                             <outlet property="copyButton" destination="HfY-Wo-gMH" id="IrI-SL-jiV"/>
                                             <outlet property="openButton" destination="Tbk-ki-qGK" id="SAe-N5-GUR"/>
                                             <outlet property="revealButton" destination="Mhp-Pp-rfw" id="9gv-8e-xXc"/>
-                                            <outlet property="title" destination="t0H-71-xTp" id="OlC-Hz-PBf"/>
                                             <outlet property="textValue" destination="av2-cE-3aJ" id="a5G-v5-4tQ"/>
+                                            <outlet property="title" destination="t0H-71-xTp" id="OlC-Hz-PBf"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="YaD-WB-pbb" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4I2-rO-7Qh" secondAttribute="bottom" constant="-20" id="2ZU-bL-E9J"/>
-                            <constraint firstItem="YaD-WB-pbb" firstAttribute="centerX" secondItem="4I2-rO-7Qh" secondAttribute="centerX" id="7wI-eF-AR9"/>
+                            <constraint firstItem="HDm-Mh-rSA" firstAttribute="top" secondItem="3Hr-tN-JYo" secondAttribute="top" id="19i-9y-gzP"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4I2-rO-7Qh" secondAttribute="bottom" constant="-20" id="2ZU-bL-E9J"/>
+                            <constraint firstItem="HDm-Mh-rSA" firstAttribute="leading" secondItem="3Hr-tN-JYo" secondAttribute="leading" id="70a-q8-16K"/>
+                            <constraint firstAttribute="centerX" secondItem="4I2-rO-7Qh" secondAttribute="centerX" id="7wI-eF-AR9"/>
                             <constraint firstItem="4I2-rO-7Qh" firstAttribute="leading" secondItem="KzI-mp-fPN" secondAttribute="leading" id="JZg-bg-E7B"/>
-                            <constraint firstItem="YaD-WB-pbb" firstAttribute="width" relation="lessThanOrEqual" secondItem="3Hr-tN-JYo" secondAttribute="width" id="PAs-Ln-X7h"/>
-                            <constraint firstItem="4I2-rO-7Qh" firstAttribute="height" secondItem="KzI-mp-fPN" secondAttribute="height" id="Qr0-wP-XZD"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" secondItem="3Hr-tN-JYo" secondAttribute="width" id="PAs-Ln-X7h"/>
                             <constraint firstItem="4I2-rO-7Qh" firstAttribute="width" secondItem="KzI-mp-fPN" secondAttribute="width" id="U4U-2H-wOZ"/>
-                            <constraint firstItem="4I2-rO-7Qh" firstAttribute="top" secondItem="KzI-mp-fPN" secondAttribute="top" id="qDT-gp-FgI"/>
+                            <constraint firstItem="HDm-Mh-rSA" firstAttribute="width" secondItem="3Hr-tN-JYo" secondAttribute="width" id="UpM-LI-H5b"/>
+                            <constraint firstItem="4I2-rO-7Qh" firstAttribute="top" secondItem="HDm-Mh-rSA" secondAttribute="bottom" id="qDT-gp-FgI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3Hr-tN-JYo"/>
                     </view>
                     <connections>
                         <outlet property="deleteButton" destination="Q5w-8r-WF1" id="52e-Re-GjM"/>
+                        <outlet property="nameTextField" destination="WjS-OI-IM5" id="dTK-pH-dIo"/>
+                        <outlet property="nameView" destination="HDm-Mh-rSA" id="UiD-xh-1qV"/>
                         <outlet property="tableView" destination="4I2-rO-7Qh" id="ymG-U6-G22"/>
                     </connections>
                 </viewController>
