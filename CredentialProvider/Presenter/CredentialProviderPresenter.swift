@@ -93,15 +93,15 @@ class CredentialProviderPresenter {
 
     func credentialProvisionRequested(for credentialIdentity: ASPasswordCredentialIdentity) {
         self.dataStore.locked
-                .take(1)
-                .bind { [weak self] locked in
+            .asDriver(onErrorJustReturn: true)
+            .drive(onNext: { [weak self] locked in
                     if locked {
                         self?.dispatcher.dispatch(action: CredentialProviderAction.authenticationRequested)
                         self?.dispatcher.dispatch(action: CredentialStatusAction.cancelled(error: .userInteractionRequired))
                     } else {
                         self?.provideCredential(for: credentialIdentity)
                     }
-                }
+                })
                 .disposed(by: self.credentialProvisionBag)
     }
 
