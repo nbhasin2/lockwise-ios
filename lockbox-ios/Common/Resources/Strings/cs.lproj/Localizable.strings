@@ -16,14 +16,29 @@
 /* Close button title */
 "close" = "Zavřít";
 
+/* Confirm dialog message */
+"confirm_dialog_message" = "Tímto z aplikace %@ odstraníte data ze svého účtu Firefoxu a všechny uložené přihlašovací údaje.";
+
+/* Confirm dialog title. %@ will be replaced with the application name */
+"confirm_dialog_title" = "Odpojit aplikaci %@?";
+
 /* Button title when agreeing to proceed to access the application. */
 "continue" = "Pokračovat";
 
 /* Text on button to close settings */
 "done" = "Hotovo";
 
+/* Accessibility callout for finishing Syncing your logins */
+"done_syncing_entries" = "Synchronizace přihlašovacích údajů dokončena";
+
 /* Product Name */
 "firefoxLockbox" = "Firefox Lockwise";
+
+/* Title for the FxA login screen. */
+"get.started" = "Začít";
+
+/* Label shown when there are no logins to list. %@ will be replaced with the application name */
+"list.empty" = "S aplikací %@ získáte přístup k heslům uloženým ve vašem Firefoxu. Pro jejich zobrazení a synchronizaci se přihlaste ke svému účtu Firefoxu.";
 
 /* This is the name displayed instead of Firefox Lockwise in some places */
 "lockwise" = "Lockwise";
@@ -37,11 +52,23 @@
 /* Ok button title */
 "ok" = "OK";
 
+/* Name of link to algorithm used by application for encryption */
+"onboarding.encryption" = "256-bitové šifrování";
+
 /* Title on onboarding screen. %@ will be replaced with the application name */
 "onboarding.title" = "Vítá vás %@";
 
+/* Message for dialog box with passcode reminder. %@ will be replaced with the application name */
+"passcode_detail_information" = "Pro uzamčení aplikace %@ na svém zařízení nastavte heslo. Bez něj se do vašeho zařízení a k uloženým datům může dostat kdokoliv.";
+
+/* Informative text about the security need for a passcode */
+"passcode_info" = "Pro ochranu svého zařízení bystě měli používat heslo. Bez něj se do vašeho zařízení a k uloženým datům může dostat kdokoliv.";
+
 /* Section title text for the password on the item detail screen */
 "password" = "Heslo";
+
+/* Title of dialog box displayed when users need to reauthenticate */
+"reauth_required" = "Požadována opětovná autentizace";
 
 /* Button title when logins list is sorted by most recently used login */
 "recent" = "Nedávné";
@@ -51,6 +78,12 @@
 
 /* Placeholder text for search field */
 "search.placeholder" = "Hledat přihlašovací údaje";
+
+/* Text shown on security screen during onboarding. */
+"securityTheather.syncBetweenDevices" = "Synchronizace mezi zařízeními zabezpečená pomocí 256-bitového šifrování";
+
+/* Label for button allowing users to go to passcode settings */
+"set_passcode" = "Nastavení hesla";
 
 /* Account option in settings */
 "settings.account" = "Účet";
@@ -85,6 +118,9 @@
 /* 24 hours auto lock setting */
 "settings.autoLock.twentyFourHour" = "24 hodin";
 
+/* Preferred Browser option in settings */
+"settings.browser" = "Preferovaný prohlížeč";
+
 /* Chrome Browser */
 "settings.browser.chrome" = "Google Chrome";
 
@@ -94,11 +130,17 @@
 /* Focus Browser */
 "settings.browser.focus" = "Firefox Focus";
 
+/* Header displayed above browser choice settings. */
+"settings.browser.header" = "Vyberte, který prohlížeč má Lockwise používat";
+
 /* Klar Browser */
 "settings.browser.klar" = "Firefox Klar";
 
 /* Safari Browser */
 "settings.browser.safari" = "Safari";
+
+/* Configuration label in settings */
+"settings.configuration.header" = "KONFIGURACE";
 
 /* FAQ option in settings */
 "settings.faq" = "Časté otázky";
@@ -118,6 +160,12 @@
 /* Title on settings screen */
 "settings.title" = "Nastavení";
 
+/* Text on button to unlink account. %@ will be replaced with the application name */
+"settings.unlinkAccount" = "Odpojit %@";
+
+/* Label on account setting explaining unlink. %@ will be replaced with the application name */
+"settings.unlinkDisclaimer" = "Tímto z aplikace %@ odstraníte synchronizované přihlašovací údaje. Ve vašem Firefoxu ale zůstanou nadále uloženy.";
+
 /* Setting to send usage data */
 "settings.usageData" = "Odesílat údaje o používání";
 
@@ -136,11 +184,23 @@
 /* Title for the option sheet allowing users to sort logins */
 "sort_entries" = "Řazení přihlašovacích údajů";
 
+/* Label and accessibility callout for Syncing your logins spinner and HUD */
+"syncing_entries" = "Synchronizace přihlašovacích údajů";
+
 /* Unlink aka Disconnect button title */
 "unlink" = "Odpojit";
 
 /* Placeholder text when the user’s email is unavailable while unlocking the app, shown in Touch ID and passcode prompts */
 "unlock_placeholder" = "Toto vám odemkne aplikaci.";
+
+/* Label for the button to unlock the device using Face ID */
+"unlock_with_faceid" = "Odemknout pomocí Face ID";
+
+/* Label for the button to unlock the device using a device passcode */
+"unlock_with_pin" = "Odemknout heslem";
+
+/* Label for the button to unlock the device using Touch ID */
+"unlock_with_touchid" = "Odemknout pomocí Touch ID";
 
 /* Placeholder text for when there is no login name */
 "unnamed_entry" = "nepojmenovaný záznam";
@@ -150,6 +210,12 @@
 
 /* Placeholder text when there is no username. String should include appropriate open/close parenthetical or similar symbols to indicate this is a placeholder, not a real username. */
 "username_placeholder" = "(žádné uživatelské jméno)";
+
+/* Section title text for the web address on the item detail screen */
+"web_address" = "Adresa serveru";
+
+/* Access message displayed to user on welcome screen. %@ will be replaced with the application name */
+"welcome.accessProduct" = "Pro používání aplikace %@ budete potřebovat účet Firefoxu a nějaká hesla k uložení.";
 
 /* Text on button to unlock app */
 "welcome.unlockButton" = "Odemknout";

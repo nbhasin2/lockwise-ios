@@ -4,6 +4,9 @@
 /* Product Name */
 "firefoxLockbox" = "Firefox Lockwise";
 
+/* Label shown when there are no logins to list. %@ will be replaced with the application name */
+"list.empty" = "S aplikací %@ získáte přístup k heslům uloženým ve vašem Firefoxu. Pro jejich zobrazení a synchronizaci se přihlaste ke svému účtu Firefoxu.";
+
 /* This is the name displayed instead of Firefox Lockwise in some places */
 "lockwise" = "Lockwise";
 
